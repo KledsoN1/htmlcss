@@ -14,6 +14,10 @@
             border-collapse: collapse;
         }
 
+        tbody > tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+
         th, td {
             border: 1px solid black;
             padding: 10px;
@@ -35,10 +39,11 @@
     <h1>Tabelas grandes</h1>
 
     <table>
+        <caption>Estados e sua População</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
 
         </thead>
@@ -157,7 +162,7 @@
         </tbody>
 
         <tfoot>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td class="num"> <strong>212 583 720</strong></td>
         </tfoot>
 
